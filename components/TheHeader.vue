@@ -22,7 +22,7 @@
                 "name": "{{ description }}",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": " Samsung Galaxy M21s is estimated to be sold in Tanzania starting at TZS 650,000. Price may vary in different markets in Tanzania. "
+                    "text": "<ResourceItem/>"
                                         ,
                     "image" : {
                         "@type" : "ImageObject",
