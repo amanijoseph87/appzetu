@@ -127,7 +127,6 @@ export default {
     hostname: config.hostname
   },
   
-  {
   sitemap: {
     routes: async () => {
       const { data } = await axios.get('config.hostname')
