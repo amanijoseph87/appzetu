@@ -10,8 +10,8 @@
     <h1 class="title">
       {{ title }}
     </h1>
-    <h2 class="subtitle">
-      <span v-if="count">{{ count }} </span>{{ description }} itemtype="https://schema.org/Question"
+    <h2 class="subtitle" itemtype="https://schema.org/Question">
+      <span v-if="count">{{ count }} </span>{{ description }}
     </h2>
     
   </header>
