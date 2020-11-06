@@ -2,7 +2,7 @@
   <a :href="url" target="_blank" class="resource-item">
     <img v-if="icon" :src="icon" alt="" class="icon" />
     <div v-else class="icon icon--placeholder">
-      {{ name | firstLetter }}
+      {{ firstLetter | name }}
     </div>
     <div class="text">
       <h2 class="title">
@@ -81,10 +81,10 @@ export default {
 }
 
 .icon {
-  height: 64px;
-  width: 64px;
-  min-height: 64px;
-  min-width: 64px;
+  height: 140px;
+  width: 140px;
+  min-height: 140px;
+  min-width: 140px;
   object-fit: contain;
   margin-right: 16px;
   background-color: $light-grey-color;
@@ -92,10 +92,10 @@ export default {
   padding: 16px;
 
   @media (max-width: 720px) {
-    height: 32px;
-    width: 32px;
-    min-height: 32px;
-    min-width: 32px;
+    height: 65px;
+    width: 65px;
+    min-height: 65px;
+    min-width: 65px;
     padding: 4px;
   }
 
