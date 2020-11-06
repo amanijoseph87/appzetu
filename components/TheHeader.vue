@@ -12,9 +12,7 @@
     <h2 class="subtitle">
       <span v-if="count">{{ count }} </span>{{ description }}
     </h2>
-  </header>
-</template>
-<script type="application/ld+json">
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -35,6 +33,8 @@
         ]
     }
 </script>
+  </header>
+</template>
 
 <script>
 import getConfig from '~/services/getConfig'
