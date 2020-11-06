@@ -5,9 +5,9 @@
       {{ name | firstLetter }}
     </div>
     <div class="text">
-      <h3 class="title">
+      <h2 class="title">
         {{ name }}
-      </h3>
+      </h2>
       <p class="description">
         {{ description }}
       </p>
