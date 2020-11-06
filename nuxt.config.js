@@ -134,7 +134,7 @@ export default {
     meta: {
       name: false,
       description: false,
-      theme_color: '#908f9e',
+      theme_color: '#00a43d',
       lang: 'en'
     },
     manifest: {
