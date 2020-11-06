@@ -3,6 +3,8 @@ import getLocale from './services/getLocale'
 import { getLinks } from './services/getLinks'
 
 const config = getConfig()
+const axios = require('axios')
+
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -124,6 +126,15 @@ export default {
   sitemap: {
     hostname: config.hostname
   },
+  
+  {
+  sitemap: {
+    routes: async () => {
+      const { data } = await axios.get('config.hostname')
+      return data.map((category) => `/${category.slug}/`)
+    }
+  }
+},
 
   // https://go.nuxtjs.dev/pwa
   pwa: {
