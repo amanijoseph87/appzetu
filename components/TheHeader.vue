@@ -22,7 +22,36 @@
                 "name": "{{ description }}",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "<ResourceItem/>"
+                    "text": "<script>
+export default {
+  name: 'ResourceItem',
+  filters: {
+    firstLetter(value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.charAt(0)
+    }
+  },
+  props: {
+    url: {
+      type: String,
+      required: true
+    },
+    name: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      default: ''
+    },
+    icon: {
+      type: String,
+      default: ''
+    }
+  }
+}
+</script>"
                                         ,
                     "image" : {
                         "@type" : "ImageObject",
