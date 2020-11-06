@@ -43,6 +43,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 
   a {
     text-decoration: none;
@@ -78,6 +79,7 @@ export default {
 .lunr-search {
   width: 100%;
   max-width: 400px;
+  display: none;
 
   input {
     width: 100%;
