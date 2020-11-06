@@ -1,5 +1,6 @@
 <template>
   <header class="header container">
+  <html itemscope itemtype="https://schema.org/FAQPage">
     <nuxt-link to="/">
       <img v-if="!icon" :src="iconSrc" alt="Logo" class="logo" />
     </nuxt-link>
@@ -10,29 +11,9 @@
       {{ title }}
     </h1>
     <h2 class="subtitle">
-      <span v-if="count">{{ count }} </span>{{ description }}
+      <span v-if="count">{{ count }} </span>{{ description }} itemtype="https://schema.org/Question"
     </h2>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "{{ description }}",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "{{ title }}"
-                                        ,
-                    "image" : {
-                        "@type" : "ImageObject",
-                        "contentUrl" : "{{ icon }}"
-                    }
-                                    }
-            }
-        ]
-    }
-</script>
+    
   </header>
 </template>
 
