@@ -14,6 +14,27 @@
     </h2>
   </header>
 </template>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "{{ description }}",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": " Samsung Galaxy M21s is estimated to be sold in Tanzania starting at TZS 650,000. Price may vary in different markets in Tanzania. "
+                                        ,
+                    "image" : {
+                        "@type" : "ImageObject",
+                        "contentUrl" : "{{ icon }}"
+                    }
+                                    }
+            }
+        ]
+    }
+</script>
 
 <script>
 import getConfig from '~/services/getConfig'
