@@ -22,7 +22,8 @@
                 "name": "{{ description }}",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "{{ ResourceItem }}"
+                    "text": "< class="resource-item">
+      {{ resource-item }}"
                                         ,
                     "image" : {
                         "@type" : "ImageObject",
