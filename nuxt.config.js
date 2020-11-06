@@ -134,14 +134,14 @@ export default {
     meta: {
       name: false,
       description: false,
-      theme_color: '#00a43d',
+      theme_color: '#008753',
       lang: 'en'
     },
     manifest: {
       name: config.title,
       short_name: config.shortname,
       description: config.description,
-      background_color: '#908f9e'
+      background_color: '#008753'
     }
   },
 
