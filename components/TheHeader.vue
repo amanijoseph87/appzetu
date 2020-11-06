@@ -9,7 +9,7 @@
     <h1 class="title">
       {{ title }}
     </h1>
-      <span itemprop= namev-if="count">{{ count }} </span>{{ description }}
+      <span namev-if="count">{{ count }} </span>{{ description }}
     </h2> 
   </header>
 </template>
