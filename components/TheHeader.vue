@@ -1,6 +1,5 @@
 <template>
   <header class="header container">
-  <html itemscope itemtype="https://schema.org/FAQPage">
     <nuxt-link to="/">
       <img v-if="!icon" :src="iconSrc" alt="Logo" class="logo" />
     </nuxt-link>
@@ -10,10 +9,8 @@
     <h1 class="title">
       {{ title }}
     </h1>
-    <h2 class="subtitle" itemtype="https://schema.org/Question">
-      <span v-if="count">{{ count }} </span>{{ description }}
-    </h2>
-    
+      <span itemprop= namev-if="count">{{ count }} </span>{{ description }}
+    </h2> 
   </header>
 </template>
 
